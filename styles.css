@@ -86,8 +86,6 @@ header{
     background-color: var(--green);
 }
 
-
-
 header h1{
     text-align: center;
     font-size: 3rem;
@@ -227,7 +225,7 @@ nav a[href="#vegetables"], nav a[href="#fruits"]{
 
 
 
-#fruitImg, #vegetablesImg{
+.fruitImg, .vegetablesImg{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -253,7 +251,7 @@ nav a[href="#vegetables"], nav a[href="#fruits"]{
 
     main{
         padding-top: 75px;
-    };
+    }
 
 
     nav a[href="#vegetables"], nav a[href="#fruits"]{
@@ -261,7 +259,7 @@ nav a[href="#vegetables"], nav a[href="#fruits"]{
         position: relative;
         bottom: 75px;
         text-align: center;
-        display: inline-flexbox;
+        display: inline;
         float: right;
         max-width: 25%;
         margin: auto 20px auto 20px;
@@ -269,12 +267,12 @@ nav a[href="#vegetables"], nav a[href="#fruits"]{
     
 
 
-    #fruitImg, #vegetablesImg{
+    .fruitImg, .vegetablesImg{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #bottom div{
+    .bottom div{
         background-color: var(--green);
     }
 
@@ -288,14 +286,13 @@ nav a[href="#vegetables"], nav a[href="#fruits"]{
     #contact address, #hours table{
         margin-left: 75px;
     }
-    
 }
 
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media screen and (min-width: 1440px){
 
-    #fruitImg, #vegetablesImg{
+    .fruitImg, .vegetablesImg{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -309,11 +306,4 @@ nav a[href="#vegetables"], nav a[href="#fruits"]{
     #contact address, #hours table{
         margin-left: 50%;
     }
-
-
-
-
-
-
-    
 }
